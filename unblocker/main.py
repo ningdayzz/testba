@@ -590,7 +590,7 @@ class ID:
             return False
         time.sleep(2)
         try:
-            devices = driver.find_elements(By.CLASS_NAME, "button-expand")
+            devices = driver.find_elements(By.CLASS_NAME, "button button-bare button-expand button-rounded-rectangle")
         except BaseException:
             logger.info(lang_text.noRemoveRequired)
         else:
